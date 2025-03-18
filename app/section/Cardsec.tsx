@@ -10,7 +10,7 @@ const Cardsec = () => {
                     <div className="w-1/2 flex justify-center items-center shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105">
                         <div className="text-center flex flex-col items-center justify-center">
                             <ProflieIcon />
-                            <span className='text-lg font-semibold'>เกี่ยวกับตัวดิฉัน</span>
+                            <span className='text-lg font-semibold'>เกี่ยวกับตัวฉัน</span>
                             <p className='text-gray-800'>ดิฉัน นางสาวแทมมารีน ตาปราบ ชอบในการพัฒนาและออกแบบเว็บไซต์ที่ตอบสนองทุกอุปกรณ์ มุ่งมั่นสร้างสรรค์โซลูชันที่ใช้งานง่ายและดูทันสมัย</p>
                             <div className="text-center">
                                 <a href="">

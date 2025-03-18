@@ -2,20 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Prompt';
+  src: url('../assets/Prompt/Prompt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme='dark'] {
+  --background: #121212;
+  --foreground: #ffffff;
 }
 
+
+/* Body styling */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground); /* ใช้ตัวแปร --foreground สำหรับสีตัวหนังสือ */
+  background: var(--background); /* ใช้ตัวแปร --background สำหรับสีพื้นหลัง */
+  font-family: 'Prompt', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+

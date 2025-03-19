@@ -9,7 +9,7 @@ const Header = () => {
         className="flex flex-row snap-x snap-mandatory overflow-x-auto scrollbar-none scroll-smooth min-h-[60vh]"
       >
         <div className="flex justify-between items-center w-screen h-[60hv] p-10 bg-gray-500">
-          <div className="w-1/2">
+          <div className="w-1/2 bg-white p-2 rounded-md">
             <span>heading</span>
 
             <div className="">

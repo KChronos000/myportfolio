@@ -7,38 +7,38 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           {/* About Me Section */}
-          <div>
+          <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
             <h3 className="text-xl font-semibold mb-4">เกี่ยวกับฉัน</h3>
-            <p className="text-white">
+            <p className="">
               สวัสดีค่ะ ฉันเป็นนักพัฒนาเว็บไซต์ที่หลงใหลในการออกแบบและพัฒนาเว็บที่ใช้งานได้ดีบนทุกอุปกรณ์
               มุ่งมั่นในการสร้างประสบการณ์การใช้งานที่ดีและดูทันสมัย
             </p>
           </div>
 
           {/* Social Media Links */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">ติดต่อฉัน</h3>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-100 hover:text-blue-400">
-                <i className=""></i> <FacebookIcon />
+          <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
+            <h3 className="text-xl font-semibold mb-4">ช่องทางติดต่อ</h3>
+            <div className="flex-col flex gap-4">
+              <a href="#" className="flex hover:text-blue-400">
+                <i className=""><FacebookIcon /></i> : Taemmrin Taprab
               </a>
-              <a href="#" className="text-gray-100 hover:text-pink-500">
-                <i className=""></i> <IGIcon />
+              <a href="#" className="flex hover:text-pink-500">
+                <i className=""><IGIcon /></i> : Taemmrin Taprab
               </a>
             </div>
           </div>
 
           {/* Contact Information */}
-          <div>
+          <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
             <h3 className="text-xl font-semibold mb-4">ข้อมูลการติดต่อ</h3>
-            <p className="text-gray-400">อีเมล: contact@example.com</p>
-            <p className="text-gray-400">เบอร์โทร: 123-456-7890</p>
+            <p className="">อีเมล: contact@example.com</p>
+            <p className="">เบอร์โทร: 123-456-7890</p>
           </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="text-center mt-8">
-          <p className="text-gray-400 text-sm">
+        <div className="bg-white/50 dark:bg-gray-900/50 rounded text-center mt-8">
+          <p className="text-sm">
             &copy; 2026 Portfolio ของฉัน. All Rights Reserved.
           </p>
         </div>

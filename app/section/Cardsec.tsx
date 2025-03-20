@@ -20,7 +20,7 @@ const Cardsec = () => {
 export const Myself = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+      <div className="border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
         <div className="text-center flex flex-col items-center justify-center h-full w-full">
           <ProflieIcon />
           <span className='text-lg font-semibold'>เกี่ยวกับตัวฉัน</span>
@@ -39,7 +39,7 @@ export const Myself = () => {
 export const Myworks = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+      <div className="border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
         <div className="text-center flex flex-col items-center justify-center h-full w-full">
           <MyWorkIcon />
           <span className='text-lg font-semibold'>ผลงาน</span>
@@ -58,7 +58,7 @@ export const Myworks = () => {
 export const MyCertificate = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+      <div className="border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
         <div className="text-center flex flex-col items-center justify-center h-full w-full">
           <CertificateIcon />
           <span className='text-lg font-semibold'>เกียรติบัตร</span>

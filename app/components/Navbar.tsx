@@ -69,17 +69,19 @@ const Navbar = () => {
 
       {/* Mobile Menu with Animation */}
       <div
-        className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-gray-800 transition-all ease-in-out duration-300 transform ${isMenuOpen ? 'translate-y-0' : isScrollingDown ? '-translate-y-20' : 'translate-y-0'}`}
+        className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-white dark:bg-gray-800 transition-all ease-in-out duration-300 transform ${isMenuOpen ? 'translate-y-0' : isScrollingDown ? '-translate-y-20' : 'translate-y-0'}`}
         style={{ transition: 'transform 0.3s ease-in-out' }}
       >
-        <div className="flex flex-col items-center py-2">
-          <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">หน้าแรก</span>
-          <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">เกี่ยวกับตัวฉัน</span>
-          <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">ผลงาน</span>
-          <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">เกียรติบัตร</span>
-          <button className='flex gap-1 bg-white dark:bg-black px-4 py-2 rounded-full hover:bg-violet-400 hover:text-white dark:hover:bg-violet-500 dark:hover:text-white hover:transition-all hover:duration-300 hover:scale-105' type="button">
-            Log-in <LoginIcon />
-          </button>
+        <div className="flex flex-col gap-1 items-center py-2">
+          <span className="dark:text-gray-200 py-2 hover:text-purple-800 cursor-pointer">หน้าแรก</span>
+          <span className="dark:text-gray-200 py-2 hover:text-purple-800 cursor-pointer">เกี่ยวกับตัวฉัน</span>
+          <span className="dark:text-gray-200 py-2 hover:text-purple-800 cursor-pointer">ผลงาน</span>
+          <span className="dark:text-gray-200 py-2 hover:text-purple-800 cursor-pointer">เกียรติบัตร</span>
+          <a href="/login">
+            <button className='flex gap-1 border dark:border-none bg-white dark:bg-black px-4 py-2 rounded-full hover:bg-violet-400 hover:text-white dark:hover:bg-violet-500 dark:hover:text-white hover:transition-all hover:duration-300 hover:scale-105' type="button">
+              Log-in <LoginIcon />
+            </button>
+          </a>
           <ThemeToggle />
         </div>
       </div>

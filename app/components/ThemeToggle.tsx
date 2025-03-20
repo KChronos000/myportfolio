@@ -45,7 +45,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 p-2 rounded-full hover:bg-blue-100 dark:hover:bg-gray-700 transition duration-200"
+      className="flex items-center gap-2 bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200 p-2 rounded-full hover:bg-blue-100 dark:hover:bg-gray-700 transition duration-200"
       aria-label="Toggle Theme"
     >
       {theme === 'dark' ? (

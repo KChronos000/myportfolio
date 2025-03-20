@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Header from './section/Header'
 import type { Metadata } from 'next'
 import Cardsec from './section/Cardsec'
+import Footer from './components/Footer'
 
 export const metadata : Metadata = {
   title: "หน้าแรก | MyPortfolio"
@@ -16,6 +17,7 @@ const page = () => {
         <Header/>
         <Cardsec/>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -1,14 +1,35 @@
 "use client"
-import React, { useState } from 'react'
-import ThemeToggle from './ThemeToggle'
-import { Bulb } from './Svgicon'
+import { useState, useEffect } from 'react';
+import ThemeToggle from './ThemeToggle';
+import { Bulb, LoginIcon } from './Svgicon';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // สร้าง state สำหรับเปิด/ปิดเมนู
+  const [lastScrollY, setLastScrollY] = useState(0); // เก็บตำแหน่งการเลื่อนล่าสุด
+  const [isScrollingDown, setIsScrollingDown] = useState(false); // สถานะการเลื่อนลง
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // สลับการแสดงเมนู
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // กำลังเลื่อนลง
+        setIsScrollingDown(true);
+      } else {
+        // กำลังเลื่อนขึ้น
+        setIsScrollingDown(false);
+      }
+      setLastScrollY(window.scrollY); // อัพเดทตำแหน่งการเลื่อนล่าสุด
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // ลบ event listener เมื่อคอมโพเนนต์ถูกทำลาย
+    };
+  }, [lastScrollY]);
 
   return (
     <div className="w-full bg-gradient-to-r from-pink-500/90 via-violet-400/90 to-sky-300/90 dark:bg-gray-900 py-4">
@@ -21,21 +42,18 @@ const Navbar = () => {
         </div>
 
         {/* Middle section: Navbar Links */}
-        <div className="hidden md:flex justify-center gap-6 items-center"> {/* ซ่อนเมนูนี้ในหน้าจอขนาดเล็ก */}
-          <span className="text-gray-800 dark:text-gray-900 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">หน้าแรก</span>
-          <span className="text-gray-800 dark:text-gray-900 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">แนะนำตัวเอง</span>
-          <span className="text-gray-800 dark:text-gray-900 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">ผลงาน</span>
-          <span className="text-gray-800 dark:text-gray-900 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">เกียรติบัตร</span>
+        <div className="hidden md:flex justify-center gap-6 items-center">
+          <span className="text-gray-800 dark:text-gray-100 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">หน้าแรก</span>
+          <span className="text-gray-800 dark:text-gray-100 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">เกี่ยวกับตัวฉัน</span>
+          <span className="text-gray-800 dark:text-gray-100 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">ผลงาน</span>
+          <span className="text-gray-800 dark:text-gray-100 hover:text-purple-800 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">เกียรติบัตร</span>
         </div>
 
         {/* Right section: Search Bar and Theme Toggle */}
-        <div className="hidden md:flex justify-end items-center gap-2"> {/* ขยายไปที่ด้านขวาสำหรับขนาดหน้าจอใหญ่ */}
-          <input 
-            type="text" 
-            placeholder="Search..." 
-            className="p-2 border-2 dark:border-slate-800 dark:bg-gray-700 rounded-full text-black hover:transition-all hover:duration-300 hover:scale-105"
-          />
-          <button className="bg-blue-500 p-2 rounded-full text-white hover:bg-blue-400 hover:transition-all hover:duration-300 hover:scale-105">Search</button>
+        <div className="hidden md:flex justify-end items-center gap-4">
+          <button className='flex gap-1 bg-white dark:bg-black px-4 py-2 rounded-full hover:bg-violet-400 hover:text-white dark:hover:bg-violet-500 dark:hover:text-white hover:transition-all hover:duration-300 hover:scale-105' type="button">
+            Log-in <LoginIcon />
+          </button>
           <ThemeToggle />
         </div>
 
@@ -50,19 +68,23 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu with Animation */}
-      <div 
-        className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-gray-800 transition-all ease-in-out duration-300 transform ${isMenuOpen ? 'translate-y-0' : '-translate-y-20'}`} 
-        style={{ transition: 'transform 0.3s ease-in-out' }} // การเคลื่อนที่ในการเปิด/ปิด
+      <div
+        className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-gray-800 transition-all ease-in-out duration-300 transform ${isMenuOpen ? 'translate-y-0' : isScrollingDown ? '-translate-y-20' : 'translate-y-0'}`}
+        style={{ transition: 'transform 0.3s ease-in-out' }}
       >
         <div className="flex flex-col items-center py-2">
           <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">หน้าแรก</span>
-          <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">แนะนำตัวเอง</span>
+          <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">เกี่ยวกับตัวฉัน</span>
           <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">ผลงาน</span>
           <span className="text-gray-200 py-2 hover:text-purple-800 cursor-pointer">เกียรติบัตร</span>
+          <button className='flex gap-1 bg-white dark:bg-black px-4 py-2 rounded-full hover:bg-violet-400 hover:text-white dark:hover:bg-violet-500 dark:hover:text-white hover:transition-all hover:duration-300 hover:scale-105' type="button">
+            Log-in <LoginIcon />
+          </button>
+          <ThemeToggle />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

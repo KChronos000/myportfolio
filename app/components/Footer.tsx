@@ -19,10 +19,10 @@ const Footer = () => {
           <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
             <h3 className="text-xl font-semibold mb-4">ช่องทางติดต่อ</h3>
             <div className="flex-col flex gap-4">
-              <a href="#" className="flex hover:text-blue-400">
+              <a href="#" className="flex hover:text-blue-400 hover:transition-all">
                 <i className=""><FacebookIcon /></i> : Taemmrin Taprab
               </a>
-              <a href="#" className="flex hover:text-pink-500">
+              <a href="#" className="flex hover:text-pink-500 hover:transition-all">
                 <i className=""><IGIcon /></i> : Taemmrin Taprab
               </a>
             </div>

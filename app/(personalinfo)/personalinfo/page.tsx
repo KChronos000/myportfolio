@@ -1,5 +1,7 @@
 import Footer from '@/app/components/Footer'
 import Navbar from '@/app/components/Navbar'
+import InfoSec from '@/app/components/personalinfo/InfoSec'
+import GraduatedSec from '@/app/components/personalinfo/GraduatedSec'
 import React from 'react'
 
 const page = () => {
@@ -25,29 +27,9 @@ const page = () => {
                         </div>
 
                     </div>
-                    <div className="card">
-                        dsaddsd
-                    </div>
                 </section>
-                <section>
-                    <div className="flex justify-center items-center pt-6">
-                        <div className="grid grid-cols-3 gap-4 text-center">
-                            <div>
-                                <img src="test.jpg" width={100} className="mx-auto" />
-                                <p className="mt-2">จบการศึกษาระดับชั้นประถม</p>
-                            </div>
-                            <div>
-                                <img src="test.jpg" width={100} className="mx-auto" />
-                                <p className="mt-2">จบการศึกษาระดับชั้นมัทธยมตอนต้น</p>
-                            </div>
-                            <div>
-                                <img src="test.jpg" width={100} className="mx-auto" />
-                                <p className="mt-2">จบการศึกษาระดับชั้นมัทธยมตอนปลาย</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
+                <InfoSec />
+                <GraduatedSec />
             </div>
         </div>
         <Footer />

@@ -10,8 +10,7 @@ const Footer = () => {
           <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
             <h3 className="text-xl font-semibold mb-4">เกี่ยวกับฉัน</h3>
             <p className="">
-              สวัสดีค่ะ ฉันเป็นนักพัฒนาเว็บไซต์ที่หลงใหลในการออกแบบและพัฒนาเว็บที่ใช้งานได้ดีบนทุกอุปกรณ์
-              มุ่งมั่นในการสร้างประสบการณ์การใช้งานที่ดีและดูทันสมัย
+              
             </p>
           </div>
 

@@ -1,45 +1,42 @@
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import { MoonIcon, SunIcon } from './Svgicon';
 
 function ThemeToggle() {
   const [theme, setTheme] = useState('light');
 
-  // ฟังก์ชันตรวจสอบและตั้งค่าธีมตามการตั้งค่าของเครื่อง
-  const setSystemTheme = () => {
+  useLayoutEffect(() => {
+    // ตรวจสอบว่าเครื่องใช้ธีมมืดหรือไม่
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = prefersDark ? 'dark' : 'light';
+
+    // ตรวจสอบใน localStorage ว่ามีการตั้งค่า theme ไว้หรือไม่
+    const storedTheme = localStorage.getItem('theme');
+    const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+
+    // ตั้งค่า theme ให้เร็วที่สุดก่อนการเรนเดอร์
     setTheme(initialTheme);
     document.documentElement.setAttribute('data-theme', initialTheme);
+
     if (initialTheme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-  };
-
-  useEffect(() => {
-    setSystemTheme(); // ตั้งค่าธีมเริ่มต้นเมื่อโหลด
-    // ติดตามการเปลี่ยนแปลงการตั้งค่าของเครื่อง
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e) => {
-      setSystemTheme(); // รีเฟรชธีมเมื่อมีการเปลี่ยนแปลง
-    };
-    mediaQuery.addEventListener('change', handleChange);
-    
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange); // ลบ event listener เมื่อไม่ใช้แล้ว
-    };
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
+
+    // ตั้งค่า theme ใหม่
     document.documentElement.setAttribute('data-theme', newTheme);
     if (newTheme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
+
+    // เก็บข้อมูลใน localStorage
+    localStorage.setItem('theme', newTheme);
   };
 
   return (
@@ -51,7 +48,7 @@ function ThemeToggle() {
       {theme === 'dark' ? (
         <SunIcon />
       ) : (
-        <MoonIcon/>
+        <MoonIcon />
       )}
     </button>
   );

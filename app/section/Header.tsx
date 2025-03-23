@@ -8,10 +8,22 @@ const Header = () => {
       <div
         className="flex flex-row snap-x snap-mandatory overflow-x-auto scrollbar-none scroll-smooth min-h-[60vh]"
       >
-        <div className="flex justify-between items-center w-screen h-[60hv] p-10 bg-gray-500">
+        <div className="flex justify-between items-center w-screen h-[60hv] p-10 bg-gray-500 area">
+        <ul className="circles z-[0]">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
 
           <PersonalInfo />
-          <PersonalInfo />
+          <PicInfo />
 
         </div>
       </div>
@@ -22,7 +34,7 @@ const Header = () => {
 
 export const PersonalInfo = () => {
   return (
-    <section className="w-1/2 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+    <section className="md:w-1/2 bg-white dark:bg-gray-800 p-6 rounded-l-lg shadow-lg max-w-4xl mx-auto h-full">
       <div className="flex flex-col md:flex-row items-center">
         {/* Personal Info */}
         <div className="md:w-2/3 md:pl-6">
@@ -35,7 +47,20 @@ export const PersonalInfo = () => {
               <button className='px-4 py-2 text-white bg-gradient-to-r from-fuchsia-500 to-blue-500 rounded-lg hover:transition-all hover:duration-300 hover:scale-105'>ดูทั้งหมด</button>
             </a>
           </div>
-          
+
+        </div>
+      </div>
+    </section>
+  );
+};
+export const PicInfo = () => {
+  return (
+    <section className="md:w-1/2 bg-white dark:bg-gray-800 p-6 rounded-r-lg shadow-lg max-w-4xl mx-auto h-full">
+      <div className="flex items-center justify-center">
+        {/* Personal Info */}
+        <div className="bg-cover md:w-2/3 md:pl-6" style={{  backgroundImage: `url(public/test.jpg)` }}>
+          {/* <img src="test.jpg" width={300} /> */}
+
         </div>
       </div>
     </section>

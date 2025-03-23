@@ -5,9 +5,6 @@ import type { Metadata } from 'next'
 import Cardsec from './section/Cardsec'
 import Footer from './components/Footer'
 
-export const metadata : Metadata = {
-  title: "หน้าแรก | MyPortfolio"
-}
 
 const page = () => {
   return (

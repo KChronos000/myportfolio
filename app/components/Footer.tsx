@@ -10,7 +10,7 @@ const Footer = () => {
           <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
             <h3 className="text-xl font-semibold mb-4">เกี่ยวกับฉัน</h3>
             <p className="">
-              
+              วิศวคอมพิวเตอร์ วิศวคอมพิวเตอร์ วิศวคอมพิวเตอร์ สาธุ สาธุ สาธุ
             </p>
           </div>
 
@@ -31,7 +31,6 @@ const Footer = () => {
           <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
             <h3 className="text-xl font-semibold mb-4">ข้อมูลการติดต่อ</h3>
             <p className="">อีเมล: contact@example.com</p>
-            <p className="">เบอร์โทร: 123-456-7890</p>
           </div>
         </div>
 

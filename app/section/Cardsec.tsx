@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Cardsec = () => {
   return (
-    <section>
+    <section className='bg-gray-100 dark:bg-[#121212]'>
       <div className="py-10 flex justify-center items-center">
         <div className="container">
           <div className="grid md:grid-cols-3 grid-cols-1 justify-center items-center gap-6">
@@ -22,7 +22,7 @@ export const Myself = () => {
   return (
     <Link href="/personalinfo">
       <div className="flex items-center justify-center">
-        <div className="border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
           <div className="text-center flex flex-col items-center justify-center h-full w-full">
             <ProflieIcon />
             <span className='text-lg font-semibold'>เกี่ยวกับตัวฉัน</span>
@@ -41,7 +41,7 @@ export const Myworks = () => {
   return (
     <Link href="/works">
       <div className="flex items-center justify-center">
-        <div className="border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
           <div className="text-center flex flex-col items-center justify-center h-full w-full">
             <MyWorkIcon />
             <span className='text-lg font-semibold'>ผลงาน</span>
@@ -60,7 +60,7 @@ export const MyCertificate = () => {
   return (
     <Link href="/certificates">
       <div className="flex items-center justify-center">
-        <div className="border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
           <div className="text-center flex flex-col items-center justify-center h-full w-full">
             <CertificateIcon />
             <span className='text-lg font-semibold'>เกียรติบัตร</span>

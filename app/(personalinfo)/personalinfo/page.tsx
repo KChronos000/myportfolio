@@ -15,7 +15,21 @@ const page = () => {
 
                         {/* Profile Image */}
                         <div className="flex justify-center">
-                            <img src="test.jpg" className="rounded-full object-cover" width={300} />
+                            <div className="flex justify-center items-center bg-gray-500 w-full h-[320] rounded-lg area">
+                                <ul className="circles z-[0]">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <img src="test.jpg" className="z-10 rounded-full object-cover" width={300} />
+                            </div>
                         </div>
 
                         {/* Intro Text */}

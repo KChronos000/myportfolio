@@ -47,6 +47,10 @@ export const Info = () => {
                     <span className="font-medium text-gray-800 dark:text-gray-300">ศาสนา :</span>
                     <span className="text-gray-700 dark:text-gray-200">พุทธ</span>
                 </li>
+                <li className="flex justify-between">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">เบอร์โทรติดต่อ :</span>
+                    <span className="text-gray-700 dark:text-gray-200">064-8071895</span>
+                </li>
             </ul>
         </>
     )
@@ -56,22 +60,22 @@ export const Skills = () => {
   return (
     <>
         <ul className="grid grid-cols-3 gap-4 space-y-2">
-            <li className="flex justify-center items-center">
+            <li className="flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                 <PhythonIcon />
             </li>
-            <li className="flex justify-center items-center">
+            <li className="flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                 <PHPIcon />
             </li>
-            <li className="flex justify-center items-center">
+            <li className="flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                 <img className='rounded-full' src="chatgpticon.jpg" width={65} />
             </li>
-            <li className="flex justify-center items-center">
+            <li className="flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                 <JavaScriptIcon />
             </li>
-            <li className="flex justify-center items-center">
+            <li className="flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                 <ReactIcon />
             </li>
-            <li className="flex justify-center items-center">
+            <li className="flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                 <TypeScriptIcon />
             </li>
         </ul>

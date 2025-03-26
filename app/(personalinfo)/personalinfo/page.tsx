@@ -34,7 +34,7 @@ const page = () => {
 
                         {/* Intro Text */}
                         <div className="text-center">
-                            <h2 className="text-xl font-bold">นางสาวแทมมารีน ตาปราบ</h2>
+                            <h2 className="text-2xl font-bold">นางสาวแทมมารีน ตาปราบ</h2>
                             <p className="text-gray-500 mt-2">
                                 ดิฉัน นางสาวแทมมารีน ตาปราบ ชอบในการพัฒนาและออกแบบเว็บไซต์ที่ตอบสนองทุกอุปกรณ์ มุ่งมั่นสร้างสรรค์โซลูชันที่ใช้งานง่ายและดูทันสมัย
                             </p>

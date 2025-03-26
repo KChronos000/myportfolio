@@ -12,10 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata : Metadata = {
-  title: "หน้าแรก | MyPortfolio"
-}
-
+export const metadata: Metadata = {
+  title: "หน้าแรก | MyPortfolio",
+  icons: {
+    icon: "/public/chatgpticon2.jpg", // Replace this path with the actual location of your image
+  },
+};
 
 export default function RootLayout({
   children,

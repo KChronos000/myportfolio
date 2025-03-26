@@ -30,7 +30,11 @@ const Footer = () => {
           {/* Contact Information */}
           <div className='bg-white dark:bg-gray-800 rounded-md shadow-md p-4'>
             <h3 className="text-xl font-semibold mb-4">ข้อมูลการติดต่อ</h3>
-            <p className="">อีเมล: contact@example.com</p>
+            <a href='#' className="">
+              <span>
+                อีเมล: contact@example.com
+              </span>
+            </a>
           </div>
         </div>
 

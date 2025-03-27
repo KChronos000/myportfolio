@@ -9,11 +9,11 @@ const InfoSec = () => {
                     <Info />
                 </div>
                 <div className="p-4 border md:col-span-2 lg:col-span-1 dark:border-none dark:bg-zinc-800 rounded-lg shadow-lg w-full max-w-md mx-auto h-full hover:transition-all hover:duration-300 hover:scale-105 md:order-3">
-                    <h2 className="text-2xl font-semibold text-violet-700 mb-4">ข้อมูลที่เกี่ยวข้อง</h2>
+                    <h2 className="text-2xl font-semibold text-blue-700 mb-4">ข้อมูลที่เกี่ยวข้อง</h2>
                     <Info2 />
                 </div>
                 <div className="p-4 border dark:border-none dark:bg-zinc-800 rounded-lg shadow-lg w-full max-w-md mx-auto h-full hover:transition-all hover:duration-300 hover:scale-105">
-                    <h2 className="text-2xl font-semibold text-blue-700 mb-4">ทักษะ</h2>
+                    <h2 className="text-2xl font-semibold text-violet-700 mb-4">ทักษะ</h2>
                     <Skills />
                 </div>
             </div>

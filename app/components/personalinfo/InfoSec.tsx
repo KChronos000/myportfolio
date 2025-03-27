@@ -1,13 +1,16 @@
 import React from 'react'
 import { JavaScriptIcon, NextjsIcon, PaletteIcon, PHPIcon, PhythonIcon, ReactIcon, TypeScriptIcon } from '../Svgicon'
-
 const InfoSec = () => {
     return (
         <section className='py-4'>
-            <div className="grid md:p-0 p-2 md:grid-cols-2 justify-center items-center gap-4">
+            <div className="grid lg:p-0 p-2 lg:grid-cols-3 md:grid-cols-2 justify-center items-center gap-4">
                 <div className="p-4 border dark:border-none dark:bg-zinc-800 rounded-lg shadow-lg w-full max-w-md mx-auto h-full hover:transition-all hover:duration-300 hover:scale-105">
-                    <h2 className="text-2xl font-semibold text-blue-700 mb-4">ข้อมูลส่วนตัว</h2>
+                    <h2 className="text-2xl font-semibold text-pink-700 mb-4">ข้อมูลส่วนตัว</h2>
                     <Info />
+                </div>
+                <div className="p-4 border md:col-span-2 lg:col-span-1 dark:border-none dark:bg-zinc-800 rounded-lg shadow-lg w-full max-w-md mx-auto h-full hover:transition-all hover:duration-300 hover:scale-105 md:order-3">
+                    <h2 className="text-2xl font-semibold text-violet-700 mb-4">ข้อมูลที่เกี่ยวข้อง</h2>
+                    <Info2 />
                 </div>
                 <div className="p-4 border dark:border-none dark:bg-zinc-800 rounded-lg shadow-lg w-full max-w-md mx-auto h-full hover:transition-all hover:duration-300 hover:scale-105">
                     <h2 className="text-2xl font-semibold text-blue-700 mb-4">ทักษะ</h2>
@@ -17,7 +20,6 @@ const InfoSec = () => {
         </section>
     )
 }
-
 
 export const Info = () => {
     return (
@@ -47,9 +49,41 @@ export const Info = () => {
                     <span className="font-medium text-gray-800 dark:text-gray-300">ศาสนา :</span>
                     <span className="text-gray-700 dark:text-gray-200">พุทธ</span>
                 </li>
-                <li className="flex justify-between">
+                <li className="flex justify-between border-b dark:border-zinc-700">
                     <span className="font-medium text-gray-800 dark:text-gray-300">เบอร์โทรติดต่อ :</span>
                     <span className="text-gray-700 dark:text-gray-200">064-8071895</span>
+                </li>
+            </ul>
+        </>
+    )
+}
+export const Info2 = () => {
+    return (
+        <>
+            <ul className="space-y-2">
+                <li className="flex justify-between border-b dark:border-zinc-700">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">โรงเรียน :</span>
+                    <span className="text-gray-700 dark:text-gray-200">ภูเขียว</span>
+                </li>
+                <li className="flex justify-between border-b dark:border-zinc-700">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">แผนการเรียน :</span>
+                    <span className="text-gray-700 dark:text-gray-200">SMT(scince-math-technology)</span>
+                </li>
+                <li className="flex justify-between border-b dark:border-zinc-700">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">บิดา :</span>
+                    <span className="text-gray-700 dark:text-gray-300">นายสัญญา ตาปราบ</span>
+                </li>
+                <li className="flex justify-between border-b dark:border-zinc-700">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">มารดา :</span>
+                    <span className="text-gray-700 dark:text-gray-200">นางโชฏิกา ตาปราบ</span>
+                </li>
+                <li className="flex justify-between border-b dark:border-zinc-700">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">งานอดเรก :</span>
+                    <div className="flex flex-col">
+                        <span className="text-gray-700 dark:text-gray-200">• เขียนโค้ด</span>
+                        <span className="text-gray-700 dark:text-gray-200">• วาดรูป</span>
+                        <span className="text-gray-700 dark:text-gray-200">• สำรวจศึกาษาข้อมูลออนไลน์</span>
+                    </div>
                 </li>
             </ul>
         </>

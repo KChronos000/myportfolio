@@ -67,7 +67,7 @@ export const Info2 = () => {
                 </li>
                 <li className="flex justify-between border-b dark:border-zinc-700">
                     <span className="font-medium text-gray-800 dark:text-gray-300">แผนการเรียน :</span>
-                    <span className="text-gray-700 dark:text-gray-200">SMT(scince-math-technology)</span>
+                    <span className="text-gray-700 dark:text-gray-200">SMT(science-math-technology)</span>
                 </li>
                 <li className="flex justify-between border-b dark:border-zinc-700">
                     <span className="font-medium text-gray-800 dark:text-gray-300">บิดา :</span>

@@ -7,7 +7,7 @@ const Cardsec = () => {
     <section className='bg-gray-100 dark:bg-[#121212]'>
       <div className="py-10 flex justify-center items-center">
         <div className="container">
-          <div className="grid md:grid-cols-3 grid-cols-1 justify-center items-center gap-6">
+          <div className="lg:p-none p-2 grid md:grid-cols-3 grid-cols-1 justify-center items-center gap-6">
             <Myself />
             <Myworks />
             <MyCertificate />

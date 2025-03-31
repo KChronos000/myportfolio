@@ -10,12 +10,12 @@ const page = () => {
         <Navbar />
         <div className="min-h-[40vh]">
             <div className="flex flex-col h-full mx-auto">
-                <section className="flex flex-col justify-center items-center pt-6">
+                <section className="flex flex-col justify-center items-center pt-4">
                     <div className="grid grid-cols-1 gap-6 container">
 
                         {/* Profile Image */}
                         <div className="flex justify-center">
-                            <div className="flex flex-col justify-center items-center bg-gray-500 w-full h-[390] rounded-lg area">
+                            <div className="flex flex-col justify-center items-center bg-gray-500 w-full md:h-[400] lg:h-[390] h-[420] sm:p-2 md:p-none rounded-lg area">
                                 <ul className="circles z-[0]">
                                     <li></li>
                                     <li></li>

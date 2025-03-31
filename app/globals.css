@@ -25,7 +25,7 @@ body {
   color: var(--foreground); /* ใช้ตัวแปร --foreground สำหรับสีตัวหนังสือ */
   background: var(--background); /* ใช้ตัวแปร --background สำหรับสีพื้นหลัง */
   font-family: 'Prompt', sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 *{

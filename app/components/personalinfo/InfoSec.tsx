@@ -1,5 +1,7 @@
 import React from 'react'
 import { JavaScriptIcon, NextjsIcon, PaletteIcon, PHPIcon, PhythonIcon, ReactIcon, TypeScriptIcon } from '../Svgicon'
+import { infoList , info2List } from './InfoData';
+
 const InfoSec = () => {
     return (
         <section className='py-4'>
@@ -21,74 +23,41 @@ const InfoSec = () => {
     )
 }
 
+
 export const Info = () => {
     return (
-        <>
-            <ul className="space-y-2">
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">ชื่อ - สกุล :</span>
-                    <span className="text-gray-700 dark:text-gray-300">นางสาวแทมมารีน ตาปราบ</span>
+        <ul className="space-y-2">
+            {infoList.map((item, index) => (
+                <li key={index} className="flex justify-between border-b dark:border-zinc-700">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">{item.label}</span>
+                    <span className="text-gray-700 dark:text-gray-200">{item.value}</span>
                 </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">ชื่อเล่น :</span>
-                    <span className="text-gray-700 dark:text-gray-200">ไทม์</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">อายุ :</span>
-                    <span className="text-gray-700 dark:text-gray-200">18 ปี</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">วันเกิด :</span>
-                    <span className="text-gray-700 dark:text-gray-200">23 พฤศจิกายน 2551</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">สัญชาติ :</span>
-                    <span className="text-gray-700 dark:text-gray-200">ไทย</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">ศาสนา :</span>
-                    <span className="text-gray-700 dark:text-gray-200">พุทธ</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">เบอร์โทรติดต่อ :</span>
-                    <span className="text-gray-700 dark:text-gray-200">064-8071895</span>
-                </li>
-            </ul>
-        </>
-    )
-}
+            ))}
+        </ul>
+    );
+};
+
+
 export const Info2 = () => {
     return (
-        <>
-            <ul className="space-y-2">
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">โรงเรียน :</span>
-                    <span className="text-gray-700 dark:text-gray-200">ภูเขียว</span>
+        <ul className="space-y-2">
+            {info2List.map((item, index) => (
+                <li key={index} className="flex justify-between border-b dark:border-zinc-700">
+                    <span className="font-medium text-gray-800 dark:text-gray-300">{item.label}</span>
+                    {Array.isArray(item.value) ? (
+                        <div className="flex flex-col">
+                            {item.value.map((v, i) => (
+                                <span key={i} className="text-gray-700 dark:text-gray-200">• {v}</span>
+                            ))}
+                        </div>
+                    ) : (
+                        <span className="text-gray-700 dark:text-gray-200">{item.value}</span>
+                    )}
                 </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">แผนการเรียน :</span>
-                    <span className="text-gray-700 dark:text-gray-200">SMT(science-math-technology)</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">บิดา :</span>
-                    <span className="text-gray-700 dark:text-gray-300">นายสัญญา ตาปราบ</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">มารดา :</span>
-                    <span className="text-gray-700 dark:text-gray-200">นางโชฏิกา ตาปราบ</span>
-                </li>
-                <li className="flex justify-between border-b dark:border-zinc-700">
-                    <span className="font-medium text-gray-800 dark:text-gray-300">งานอดเรก :</span>
-                    <div className="flex flex-col">
-                        <span className="text-gray-700 dark:text-gray-200">• เขียนโค้ด</span>
-                        <span className="text-gray-700 dark:text-gray-200">• วาดรูป</span>
-                        <span className="text-gray-700 dark:text-gray-200">• สำรวจศึกาษาข้อมูลออนไลน์</span>
-                    </div>
-                </li>
-            </ul>
-        </>
-    )
-}
+            ))}
+        </ul>
+    );
+};
 
 export const Skills = () => {
     return (

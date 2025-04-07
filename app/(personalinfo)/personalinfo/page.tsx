@@ -3,6 +3,7 @@ import Navbar from '@/app/components/Navbar'
 import InfoSec from '@/app/components/personalinfo/InfoSec'
 import GraduatedSec from '@/app/components/personalinfo/GraduatedSec'
 import React from 'react'
+import HistoryInfo from '@/app/components/personalinfo/HistoryInfo'
 
 const page = () => {
   return (
@@ -44,6 +45,7 @@ const page = () => {
                 </section>
                 <InfoSec />
                 <GraduatedSec />
+                <HistoryInfo />
             </div>
         </div>
         <Footer />

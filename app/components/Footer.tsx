@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 items-center justify-center">
           {/* About Me Section */}
           <div className='bg-white dark:bg-gray-800 h-full rounded-md shadow-md p-4'>
-            <h3 className="text-xl font-semibold mb-4">เกี่ยวกับฉัน</h3>
+            <h3 className="text-xl font-semibold mb-4">คติประจำใจ</h3>
             <p className="">
               วิศวคอมพิวเตอร์ วิศวคอมพิวเตอร์ วิศวคอมพิวเตอร์ สาธุ สาธุ สาธุ
             </p>

@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isScrollingDown, setIsScrollingDown] = useState(false); // สถานะการเลื่อนลง
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // สลับการแสดงเมนู
+    setIsMenuOpen(!isMenuOpen); // สลับเมนุ
   };
 
   useEffect(() => {
@@ -34,14 +34,12 @@ const Navbar = () => {
   return (
     <div className="w-full bg-gradient-to-r from-pink-500/90 via-violet-400/90 to-sky-300/90 dark:bg-gray-900 py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
-        {/* LefLogo/Icon */}
         <div className="flex justify-start items-center gap-2">
           <span className="flex items-center text-2xl font-bold text-white dark:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">
             <Bulb /> Portfolio
           </span>
         </div>
 
-        {/* Navbar Links */}
         <div className="hidden md:flex justify-center gap-6 items-center">
           <a href="/">
             <span className="text-gray-800 dark:text-gray-100 hover:text-purple-100 dark:hover:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">

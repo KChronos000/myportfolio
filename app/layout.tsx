@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "หน้าแรก | MyPortfolio",
   icons: {
-    icon: "/public/chatgpticon2.jpg", // Replace this path with the actual location of your image
+    icon: "/public/chatgpticon2.jpg",
   },
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 dark:bg-[#121212]`}
       >
         {children}
       </body>

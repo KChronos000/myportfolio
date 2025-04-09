@@ -6,7 +6,7 @@ const HistoryInfo = () => {
       <div className="container">
         <div className="flex flex-col justify-center items-center p-2 lg:p-0 gap-4">
 
-          <div className="dark:bg-zinc-800/70 dark:text-gray-300 rounded-md border-2 dark:border-none shadow-md hover:transition-all hover:duration-500 hover:scale-[102.5%]">
+          <div className="bg-white dark:bg-zinc-800/70 dark:text-gray-300 rounded-md border-2 dark:border-none shadow-md hover:transition-all hover:duration-500 hover:scale-[102.5%]">
             <div className="grid grid-cols-1 lg:flex justify-between gap-2">
               <div className="flex flex-col p-2">
                 <h3 className='dark:text-white text-2xl font-semibold text-center'>ประวัติส่วนตัว</h3>
@@ -20,7 +20,7 @@ const HistoryInfo = () => {
             </div>
           </div>
 
-          <div className="dark:bg-zinc-800/70 dark:text-gray-300 rounded-md border-2 dark:border-none shadow-md hover:transition-all hover:duration-500 hover:scale-[102.5%]">
+          <div className="bg-white dark:bg-zinc-800/70 dark:text-gray-300 rounded-md border-2 dark:border-none shadow-md hover:transition-all hover:duration-500 hover:scale-[102.5%]">
             <div className="grid grid-cols-1 lg:flex justify-between gap-2">
               <div className="lg:order-2 flex flex-col p-2">
                 <h3 className='dark:text-white text-2xl font-semibold text-center'>ทำไมถึงชอบในโปรแกรมคอมพิวเตอร์</h3>

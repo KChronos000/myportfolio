@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="relative w-full min-h-[40vh]">
       <div className="flex flex-row snap-x snap-mandatory overflow-x-auto scrollbar-none scroll-smooth min-h-[60vh]">
-        <div className="md:flex md:flex-row flex-col justify-between items-center w-screen h-[60hv] p-10 bg-gray-500 area">
+        <div className="pt-[5.5rem] md:flex md:flex-row flex-col justify-between items-center w-screen h-[60hv] p-10 bg-gray-500 area">
           <ul className="circles z-[0]">
             <li></li>
             <li></li>

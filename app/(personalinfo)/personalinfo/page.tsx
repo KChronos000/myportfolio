@@ -11,7 +11,7 @@ const page = () => {
         <Navbar />
         <div className="min-h-[40vh]">
             <div className="flex flex-col h-full mx-auto">
-                <section className="flex flex-col justify-center items-center pt-4">
+                <section className="flex flex-col justify-center items-center pt-[5.5rem]">
                     <div className="grid grid-cols-1 gap-6 container">
 
                         {/* Profile Image */}

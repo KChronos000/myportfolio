@@ -62,7 +62,7 @@ export const Info2 = () => {
 export const Skills = () => {
     return (
       <>
-          <ul className="grid grid-cols-5 gap-4 space-y-2">
+          <ul className="grid grid-cols-4 gap-4 space-y-2">
               <li className="relative flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                   <PhythonIcon />
                   <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm text-white bg-black p-1 rounded opacity-0 hover:opacity-100 transition-opacity duration-300">
@@ -87,24 +87,24 @@ export const Skills = () => {
                       JavaScript
                   </span>
               </li>
-              <li className="relative flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
+              {/* <li className="relative flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                   <ReactIcon />
                   <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm text-white bg-black p-1 rounded opacity-0 hover:opacity-100 transition-opacity duration-300">
                       React
                   </span>
-              </li>
+              </li> */}
               <li className="relative flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                   <TypeScriptIcon />
                   <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm text-white bg-black p-1 rounded opacity-0 hover:opacity-100 transition-opacity duration-300">
                       TypeScript
                   </span>
               </li>
-              <li className="relative flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
+              {/* <li className="relative flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                   <NextjsIcon />
                   <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm text-white bg-black p-1 rounded opacity-0 hover:opacity-100 transition-opacity duration-300">
                       Nextjs.
                   </span>
-              </li>
+              </li> */}
               <li className="relative flex justify-center items-center hover:transition-all hover:duration-300 hover:scale-105">
                   <PaletteIcon />
                   <span className="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm text-white bg-black p-1 rounded opacity-0 hover:opacity-100 transition-opacity duration-300">

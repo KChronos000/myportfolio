@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Cardsec = () => {
   return (
-    <section>
+    <section className='bg-gray-100 dark:bg-[#121212]'>
       <div className="py-10 flex justify-center items-center">
         <div className="container">
           <div className="lg:p-none p-2 grid md:grid-cols-3 grid-cols-1 justify-center items-center gap-6">
@@ -45,7 +45,7 @@ export const Myworks = () => {
           <div className="text-center flex flex-col items-center justify-center h-full w-full">
             <MyWorkIcon />
             <span className='text-lg font-semibold'>ผลงาน</span>
-            <p className='text-gray-800 dark:text-gray-300'>ประสบการณ์ในการพัฒนาเว็บไซต์สำหรับโรงเรียน รวมถึงการเข้าร่วมการแข่งขันวิชาการต่างๆ โดยมุ่งมั่นสร้างสรรค์โซลูชันที่เหมาะสมกับความต้องการของผู้ใช้</p>
+            <p className='text-gray-800 dark:text-gray-300'>ประสบการณ์ในการพัฒนาเว็บไซต์สำหรับโรงเรียน รวมถึงการเข้าร่วมการแข่งขันวิชาการต่างๆ สร้างสรรค์การแก้ไขปัญหาที่เหมาะสมกับความต้องการของผู้ใช้</p>
             <div className="text-center">
               <button className=''><EnterIcon /></button>
             </div>

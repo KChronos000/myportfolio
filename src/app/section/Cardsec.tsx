@@ -22,7 +22,7 @@ export const Myself = () => {
   return (
     <Link href="/personalinfo">
       <div className="flex items-center justify-center">
-        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:hover:bg-pink-800 hover:bg-pink-300 dark:hover:text-black hover:text-red-600 hover:shadow-none hover:border-none dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
           <div className="text-center flex flex-col items-center justify-center h-full w-full">
             <ProflieIcon />
             <span className='text-lg font-semibold'>เกี่ยวกับตัวฉัน</span>
@@ -41,7 +41,7 @@ export const Myworks = () => {
   return (
     <Link href="/works">
       <div className="flex items-center justify-center">
-        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:hover:bg-violet-800 hover:bg-violet-300 dark:hover:text-black hover:text-purple-700 hover:shadow-none hover:border-none dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
           <div className="text-center flex flex-col items-center justify-center h-full w-full">
             <MyWorkIcon />
             <span className='text-lg font-semibold'>ผลงาน</span>
@@ -60,11 +60,11 @@ export const MyCertificate = () => {
   return (
     <Link href="/certificates">
       <div className="flex items-center justify-center">
-        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
+        <div className="bg-white border dark:border-none md:w-full w-3/4 cursor-pointer flex justify-center items-center dark:hover:bg-indigo-800 hover:bg-blue-300 dark:hover:text-black hover:text-indigo-600 hover:shadow-none hover:border-none dark:bg-neutral-800 shadow-md p-2 rounded-lg hover:transition-all hover:duration-300 hover:scale-105 min-h-[300px]">
           <div className="text-center flex flex-col items-center justify-center h-full w-full">
             <CertificateIcon />
             <span className='text-lg font-semibold'>เกียรติบัตร</span>
-            <p className='text-gray-800 dark:text-gray-300'>การได้รับใบเกียรติบัตรจากการทำเว็บที่ตอบโจทย์ด้านประสบการณ์ผู้ใช้ (UX) หรือการพัฒนาระบบหลังบ้าน (Backend)</p>
+            <p className='text-gray-800 dark:text-gray-300'>การได้รับใบเกียรติบัตรจากการทำเว็บที่ตอบโจทย์ด้านประสบการณ์ผู้ใช้ (UX/UI) หรือการพัฒนาระบบหลังบ้าน (Backend)</p>
             <div className="text-center">
               <button className=''><EnterIcon /></button>
             </div>

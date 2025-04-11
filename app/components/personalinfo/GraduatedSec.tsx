@@ -4,7 +4,7 @@ const GraduatedSec = () => {
   return (
     <section>
         <div className="flex flex-col justify-center items-center py-6">
-            <h2 className='text-2xl font-bold my-4'>ประวัติการศึกษา</h2>
+            <h2 className='text-3xl font-bold my-4'>ประวัติการศึกษา</h2>
             <div className="grid grid-cols-3 lg:grid-cols-7 justify-center items-center gap-4 text-center">
                 <div className='hover:text-cyan-400 hover:transition-all hover:duration-300 hover:scale-105'>
                     <img src="kinderschool.png" width={100} className="mx-auto bg-white shadow-md hover:shadow-indigo-500 hover:bg-blue-100 hover:transition-all hover:duration-300 object-cover rounded-full" />

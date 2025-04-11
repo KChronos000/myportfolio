@@ -1,5 +1,3 @@
-import Footer from '@/app/components/Footer'
-import Navbar from '@/app/components/Navbar'
 import InfoSec from '@/app/components/personalinfo/InfoSec'
 import GraduatedSec from '@/app/components/personalinfo/GraduatedSec'
 import React from 'react'
@@ -8,7 +6,6 @@ import HistoryInfo from '@/app/components/personalinfo/HistoryInfo'
 const page = () => {
   return (
     <>
-        <Navbar />
         <div className="min-h-[40vh]">
             <div className="flex flex-col h-full mx-auto">
                 <section className="flex flex-col justify-center items-center pt-[5.5rem]">
@@ -48,7 +45,6 @@ const page = () => {
                 <HistoryInfo />
             </div>
         </div>
-        <Footer />
     </>
   )
 }

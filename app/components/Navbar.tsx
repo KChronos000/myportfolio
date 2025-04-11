@@ -49,7 +49,7 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <div className={`w-full fixed top-0 z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'} bg-gradient-to-r from-pink-500/90 via-violet-400/90 to-sky-300/90 dark:bg-gray-900 py-4`}>
+    <div className={`w-full fixed top-0 z-[99999999999999999] transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'} bg-gradient-to-r from-pink-500/90 via-violet-400/90 to-sky-300/90 dark:bg-gray-900 py-4`}>
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex justify-start items-center gap-2">
           <span className="flex items-center text-2xl font-bold text-white dark:text-black cursor-pointer hover:transition-all hover:duration-300 hover:scale-105">

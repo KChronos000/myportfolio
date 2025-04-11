@@ -1,5 +1,5 @@
 import React from 'react';
-import { CertificateIcon, EnterIcon, MyWorkIcon, ProflieIcon } from '../components/Svgicon';
+import { CertificateIcon, EnterIcon, MyWorkIcon, ProflieIcon } from '@/components/Svgicon';
 import Link from 'next/link';
 
 const Cardsec = () => {

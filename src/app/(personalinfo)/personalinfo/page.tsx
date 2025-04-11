@@ -1,7 +1,8 @@
-import InfoSec from '@/app/components/personalinfo/InfoSec'
-import GraduatedSec from '@/app/components/personalinfo/GraduatedSec'
+
+import GraduatedSec from '@/components/personalinfo/GraduatedSec'
+import HistoryInfo from '@/components/personalinfo/HistoryInfo'
+import InfoSec from '@/components/personalinfo/InfoSec'
 import React from 'react'
-import HistoryInfo from '@/app/components/personalinfo/HistoryInfo'
 
 const page = () => {
   return (

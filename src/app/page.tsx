@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from './components/Navbar'
 import Header from './section/Header'
 import Cardsec from './section/Cardsec'
-import Footer from './components/Footer'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 
 const page = () => {

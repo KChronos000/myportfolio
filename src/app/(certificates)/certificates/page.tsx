@@ -1,4 +1,4 @@
-import Carousel from '@/app/components/Carousel'
+import Carousel from '@/components/Carousel'
 import React from 'react'
 
 const page = () => {
